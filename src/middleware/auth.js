@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 
 const verifyToken = (token)=>{
     return new Promise((respose, reject)=>{
-        jwt.verify(token,"VIJENDRA",function (err,result){
+        jwt.verify(token,"AJAY",function (err,result){
             if(err)
                 reject(err)
             respose(result.user)
